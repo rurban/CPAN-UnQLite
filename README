@@ -51,14 +51,14 @@ specified CPAN module, distribution, and CPAN author id.
 The query terms are assumed to match exactly, and are
 case-insensitive.
 
-As of CPAN.pm version 1.88_65, there is experimental support 
-within CPAN.pm for using CPAN::UnQLite to obtain
-information on packages, modules, and authors. One goal
+As of CPAN.pm version ??, there is experimental support 
+within CPAN.pm for using CPAN::UnQLite similar to use_sqlite 
+to obtain information on packages, modules, and authors. One goal
 of this is to reduce the memory footprint of the CPAN.pm
 shell, as this information is no longer all preloaded into
 memory. This can be enabled through
    perl -MCPAN -e shell
-   cpan> o conf use_sqlite 1
+   cpan> o conf use_unqlite 1
 
 This version is considered alpha. Please report bugs
 and feature requests to CPAN's request tracker:
@@ -67,8 +67,10 @@ and feature requests to CPAN's request tracker:
 
 or directly to the author. Development takes place at
 
-  http://cpan-search.svn.sourceforge.net/viewvc/cpan-search/CPAN-UnQLite/
+  https://github.com/rurban/CPAN-UnQLite
 
-This software is copyright 2006,2008 by Randy Kobes
-<r.kobes@uwinnipeg.ca>. Use and
-redistribution are under the same terms as Perl itself.
+This software is Copyright 2006,2008 by Randy Kobes <r.kobes@uwinnipeg.ca>,
+Copyright 2011-2013 by Serguei Trouchelle <stro@cpan.org>, and 
+Copyright 2013 by Reini Urban <rurban@cpan.org>.
+
+Use and redistribution are under the same terms as Perl itself.

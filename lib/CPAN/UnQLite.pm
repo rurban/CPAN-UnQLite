@@ -25,7 +25,7 @@ sub new {
     my $db_dir = $args{db_dir};
     my $urllist = [];
     my $keep_source_where;
-    # for testing undr Darwin, must load CPAN::MyConfig contained
+    # for testing under Darwin, must load CPAN::MyConfig contained
     # in PERL5LIB, as File::HomeDir doesn't use this
     if ($ENV{CPAN_UNQLITE_TESTING}) {
       eval {require CPAN::MyConfig;};
@@ -92,7 +92,7 @@ sub query {
 
 =head1 NAME
 
-CPAN::UnQLite - maintain and search a minimal CPAN database
+CPAN::UnQLite - Faster and concurrent CPAN::SQLite
 
 =head1 SYNOPSIS
 
@@ -111,6 +111,11 @@ F<$CPAN/modules/03modlist.data.gz>,
 F<$CPAN/modules/02packages.details.txt.gz>, and
 F<$CPAN/authors/01mailrc.txt.gz>. It should be
 considered at an alpha stage of development.
+
+If you run multiple cpan session concurrently with
+CPAN::SQLite you will recognize database lock errors,
+even if all sessions only query the database.
+CPAN::UnQLite overcomes these problems.
 
 One begins by creating the object as
 
@@ -204,15 +209,15 @@ this defaults to 200.
 
 =head1 CPAN.pm support
 
-As of CPAN.pm version 1.88_65, there is experimental support
-within CPAN.pm for using CPAN::UnQLite to obtain
-information on packages, modules, and authors. One goal
+As of CPAN.pm version ??, there is experimental support
+within CPAN.pm for using CPAN::UnQLite similar to use_sqlite 
+to obtain information on packages, modules, and authors. One goal
 of this is to reduce the memory footprint of the CPAN.pm
 shell, as this information is no longer all preloaded into
 memory. This can be enabled through
 
    perl -MCPAN -e shell
-   cpan> o conf use_sqlite 1
+   cpan> o conf use_unqlite 1
 
 Use
 
