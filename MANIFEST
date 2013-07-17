@@ -1,0 +1,34 @@
+bin/cpandb
+INSTALL
+lib/CPAN/UnQLite.pm
+lib/CPAN/UnQLite/DBI.pm
+lib/CPAN/UnQLite/DBI/Index.pm
+lib/CPAN/UnQLite/DBI/Search.pm
+lib/CPAN/UnQLite/Index.pm
+lib/CPAN/UnQLite/Info.pm
+lib/CPAN/UnQLite/META.pm
+lib/CPAN/UnQLite/Populate.pm
+lib/CPAN/UnQLite/Search.pm
+lib/CPAN/UnQLite/State.pm
+lib/CPAN/UnQLite/Util.pm
+Makefile.PL
+Build.PL
+MANIFEST            This list of files
+README
+Changes
+t/00compile.t
+t/01basic.t
+t/02drop.t
+t/03info.t
+t/04search.t
+t/05meta_new.t
+t/05meta_update.t
+t/06search_everything.t
+t/cpan/authors/01mailrc.txt.gz
+t/cpan/modules/02packages.details.txt.gz
+t/cpan/modules/03modlist.data.gz
+t/dot-cpan/CPAN/TestConfig.pm
+t/lib/TestShell.pm
+t/lib/TestSQL.pm
+META.yml                                 Module YAML meta-data (added by MakeMaker)
+META.json                                Module JSON meta-data (added by MakeMaker)

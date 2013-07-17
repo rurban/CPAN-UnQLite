@@ -1,0 +1,101 @@
+---
+history:
+  - attempts:
+      - method: dleasy
+        start: 1373641857.05313
+        url: &1 !!perl/hash:CPAN::URL
+          FROM: USER
+          TEXT: file:/home/rurban/Perl/.cpan-build/CPAN-UnQLite-0.203-MLv8Dn/t/cpan/
+    end: 1373641857.07005
+    file: authors/01mailrc.txt.gz
+    filesize: 177
+    start: 1373641857.05296
+    thesiteurl: *1
+  - attempts:
+      - method: dleasy
+        start: 1373641857.13912
+        url: &2 !!perl/hash:CPAN::URL
+          FROM: USER
+          TEXT: file:/home/rurban/Perl/.cpan-build/CPAN-UnQLite-0.203-MLv8Dn/t/cpan/
+    end: 1373641857.13944
+    file: modules/02packages.details.txt.gz
+    filesize: 6510
+    start: 1373641857.13904
+    thesiteurl: *2
+  - attempts:
+      - method: dleasy
+        start: 1373641857.15929
+        url: &3 !!perl/hash:CPAN::URL
+          FROM: USER
+          TEXT: file:/home/rurban/Perl/.cpan-build/CPAN-UnQLite-0.203-MLv8Dn/t/cpan/
+    end: 1373641857.15962
+    file: modules/03modlist.data.gz
+    filesize: 2246
+    start: 1373641857.15921
+    thesiteurl: *3
+  - attempts:
+      - method: dleasy
+        start: 1373641857.7125
+        url: &4 !!perl/hash:CPAN::URL
+          FROM: USER
+          TEXT: file:/home/rurban/Perl/.cpan-build/CPAN-UnQLite-0.203-MLv8Dn/t/cpan/
+    end: 1373641857.72917
+    file: authors/01mailrc.txt.gz
+    filesize: 177
+    start: 1373641857.71237
+    thesiteurl: *4
+  - attempts:
+      - method: dleasy
+        start: 1373641857.82823
+        url: &5 !!perl/hash:CPAN::URL
+          FROM: USER
+          TEXT: file:/home/rurban/Perl/.cpan-build/CPAN-UnQLite-0.203-MLv8Dn/t/cpan/
+    end: 1373641857.82856
+    file: modules/03modlist.data.gz
+    filesize: 2246
+    start: 1373641857.82815
+    thesiteurl: *5
+  - attempts:
+      - method: dleasy
+        start: 1373641857.88902
+        url: &6 !!perl/hash:CPAN::URL
+          FROM: USER
+          TEXT: file:/home/rurban/Perl/.cpan-build/CPAN-UnQLite-0.203-MLv8Dn/t/cpan/
+    end: 1373641857.88961
+    file: modules/02packages.details.txt.gz
+    filesize: 6510
+    start: 1373641857.88894
+    thesiteurl: *6
+  - attempts:
+      - method: dleasy
+        start: 1373641860.05901
+        url: &7 !!perl/hash:CPAN::URL
+          FROM: USER
+          TEXT: file:/home/rurban/Perl/.cpan-build/CPAN-UnQLite-0.203-MLv8Dn/t/cpan/
+    end: 1373641860.07541
+    file: authors/01mailrc.txt.gz
+    filesize: 177
+    start: 1373641860.05882
+    thesiteurl: *7
+  - attempts:
+      - method: dleasy
+        start: 1373641860.1885
+        url: &8 !!perl/hash:CPAN::URL
+          FROM: USER
+          TEXT: file:/home/rurban/Perl/.cpan-build/CPAN-UnQLite-0.203-MLv8Dn/t/cpan/
+    end: 1373641860.18884
+    file: modules/02packages.details.txt.gz
+    filesize: 6510
+    start: 1373641860.18842
+    thesiteurl: *8
+  - attempts:
+      - method: dleasy
+        start: 1373641860.2329
+        url: &9 !!perl/hash:CPAN::URL
+          FROM: USER
+          TEXT: file:/home/rurban/Perl/.cpan-build/CPAN-UnQLite-0.203-MLv8Dn/t/cpan/
+    end: 1373641860.23322
+    file: modules/03modlist.data.gz
+    filesize: 2246
+    start: 1373641860.23283
+    thesiteurl: *9

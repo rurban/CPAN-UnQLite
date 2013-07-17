@@ -1,0 +1,74 @@
+This is the README for CPAN::UnQLite, which is used for setting up,
+maintaining, and searching through a local CPAN database consisting
+of information in the three main CPAN index files:
+  $CPAN/modules/03modlist.data.gz
+  $CPAN/modules/02packages.details.txt.gz
+  $CPAN/authors/01mailrc.txt.gz
+DBD::UnQLite is used as the database engine.
+
+Installation proceeds through the usual
+   perl Makefile.PL
+   $MAKE
+   $MAKE test
+   $MAKE install
+or, if Module::Build is available,
+   perl Build.PL
+   perl Build
+   perl Build test
+   perl Build install
+
+The package consists of a number of modules:
+   CPAN::UnQLite: the top-level package
+   CPAN::UnQLite::Index: set up and maintain the database
+   CPAN::UnQLite::Info: extract information from the CPAN indices
+   CPAN::UnQLite::META: helper module for CPAN.pm integration
+   CPAN::UnQLite::State: gather information on the state of the database
+   CPAN::UnQLite::Search: methods to search the database
+   CPAN::UnQLite::Populate: populate the database tables
+   CPAN::UnQLite::DBI: DBI information for the database
+   CPAN::UnQLite::DBI::Index: DBI information for indexing the database
+   CPAN::UnQLite::DBI:Search: DBI information for searching the database
+See the pod documentation of the specific modules for details.
+
+Perhaps the easiest way to set up and maintain the database is through
+the supplied cpandb script. If we assume that there is a CPAN.pm
+client available and configured, the database can be created via
+   cpandb --setup
+which will create the database file cpandb.sql under the
+"cpan_home" defined in CPAN::Config (this is the same location
+as where CPAN.pm's Metadata is found). Subsequent updates to
+the database can be done through
+   cpandb --update
+This scenario assumes that updates to the CPAN index files are
+handled by CPAN.pm.
+
+The cpandb script also provides some elementary searches:
+   cpandb --module My::Module
+   cpandb --dist My-Dist
+   cpandb --cpanid ME
+which will provide some information on, respectively, the
+specified CPAN module, distribution, and CPAN author id.
+The query terms are assumed to match exactly, and are
+case-insensitive.
+
+As of CPAN.pm version 1.88_65, there is experimental support 
+within CPAN.pm for using CPAN::UnQLite to obtain
+information on packages, modules, and authors. One goal
+of this is to reduce the memory footprint of the CPAN.pm
+shell, as this information is no longer all preloaded into
+memory. This can be enabled through
+   perl -MCPAN -e shell
+   cpan> o conf use_sqlite 1
+
+This version is considered alpha. Please report bugs
+and feature requests to CPAN's request tracker:
+
+  http://rt.cpan.org/NoAuth/Bugs.html?Dist=CPAN-UnQLite
+
+or directly to the author. Development takes place at
+
+  http://cpan-search.svn.sourceforge.net/viewvc/cpan-search/CPAN-UnQLite/
+
+This software is copyright 2006,2008 by Randy Kobes
+<r.kobes@uwinnipeg.ca>. Use and
+redistribution are under the same terms as Perl itself.
