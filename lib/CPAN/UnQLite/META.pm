@@ -3,7 +3,7 @@
 package CPAN::UnQLite::META;
 use strict;
 use warnings;
-our $VERSION = '0.203';
+our $VERSION = '0.01_01';
 
 use English qw/-no_match_vars/;
 

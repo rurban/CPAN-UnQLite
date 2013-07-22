@@ -2,7 +2,7 @@ package CPAN::UnQLite;
 use strict;
 use warnings;
 
-our $VERSION = '0.1';
+our $VERSION = '0.01_01';
 
 use English qw/-no_match_vars/;
 
@@ -92,7 +92,7 @@ sub query {
 
 =head1 NAME
 
-CPAN::UnQLite - Faster and concurrent CPAN::SQLite
+CPAN::UnQLite - Faster and concurrent than CPAN::SQLite
 
 =head1 SYNOPSIS
 
@@ -255,6 +255,10 @@ F<cpan_search_log.dddddddddd>, will be created in the same
 directory as the database file.
 
 =head1 SEE ALSO
+
+L<CPAN::SQLite> for the original version via L<DBD::SQLite>.
+
+L<UnQLite> for the new nosql database backend.
 
 L<CPAN::UnQLite::Index>, for setting up and maintaining
 the database, and L<CPAN::UnQLite::Search> for an

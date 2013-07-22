@@ -1,5 +1,3 @@
-# $Id: 03info.t 42 2013-06-29 20:44:17Z stro $
-
 use strict;
 use warnings;
 use Test::More;
@@ -18,7 +16,7 @@ my $cwd = getcwd;
 my $CPAN = catdir $cwd, 't', 'cpan';
 my $t_dir = catdir $cwd, 't';
 
-my $db_name = 'cpandb.sql';
+my $db_name = 'cpandb.db';
 my $db_dir = $cwd;
 unlink($db_name) if (-e $db_name);
 

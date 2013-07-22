@@ -12,8 +12,7 @@ lib/CPAN/UnQLite/Search.pm
 lib/CPAN/UnQLite/State.pm
 lib/CPAN/UnQLite/Util.pm
 Makefile.PL
-Build.PL
-MANIFEST            This list of files
+MANIFEST
 README
 Changes
 t/00compile.t
@@ -30,5 +29,3 @@ t/cpan/modules/03modlist.data.gz
 t/dot-cpan/CPAN/TestConfig.pm
 t/lib/TestShell.pm
 t/lib/TestSQL.pm
-META.yml                                 Module YAML meta-data (added by MakeMaker)
-META.json                                Module JSON meta-data (added by MakeMaker)

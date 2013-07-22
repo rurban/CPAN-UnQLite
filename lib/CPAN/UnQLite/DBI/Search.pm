@@ -5,7 +5,7 @@ package CPAN::UnQLite::DBI::Search;
 use strict;
 use warnings;
 
-our $VERSION = '0.203';
+our $VERSION = '0.01_01';
 
 use parent 'CPAN::UnQLite::DBI';
 use CPAN::UnQLite::DBI qw($tables $dbh);

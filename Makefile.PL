@@ -40,12 +40,12 @@ if ($eu_version >= 5.43) {
 }
 
 my $prereqs = {
+    'UnQLite'               => 0.03,
     'File::Spec'            => 0,
     'Archive::Tar'          => 1.54,
     'IO::Zlib'              => 0,
     'Compress::Zlib'        => 0,
     'CPAN::DistnameInfo'    => 0.09,
-    'UnQLite'               => 0.02,
     'File::HomeDir'         => 0,
     'LWP::Simple'           => 0,
     'CPAN::Index'           => 1.93,

@@ -4,7 +4,7 @@ package CPAN::UnQLite::DBI::Index;
 use strict;
 use warnings;
 
-our $VERSION = '0.203';
+our $VERSION = '0.01_01';
 
 use CPAN::UnQLite::DBI qw($dbh);
 use parent 'CPAN::UnQLite::DBI';
